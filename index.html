@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="content" class="production_page">
+        <div class="left_side">
+            <div class="left_menu_div">
+                <ul class="left_menu">
+                    <!--<li style="list-style: none; margin-left: 0; margin-bottom: 10px;"><b style="font-size: 14px;color:#ff5a00;">Продукция</b></li>-->
+                    <li class="depth1_left_men_lnk"><a href="/price/">Прайс-лист</a></li>
+        
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/beton/" class="act">
+                            Товарный бетон </a>
+                        <span data-id="11" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_down">
+                        </span>
+                    </li>
+        
+                    
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/rastvor/">
+                            Строительный раствор </a>
+                        <span data-id="13" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="13">
+                        <a href="/production/rastvor/rastvor_m_50/">
+                            Цементный раствор М50 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="13">
+                        <a href="/production/rastvor/rastvor_m_100/">
+                            Цементный раствор М100 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="13">
+                        <a href="/production/rastvor/rastvor_m_150/">
+                            Цементный раствор М150 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="13">
+                        <a href="/production/rastvor/rastvor_m_200/">
+                            Цементный раствор М200 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="13">
+                        <a href="/production/rastvor/rastvor_m_250/">
+                            Цементный раствор М250 </a>
+                    </li>
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/cps/">
+                            Цементно-песчаные смеси </a>
+                        <span data-id="23" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="23">
+                        <a href="/production/cps/cementno_peschanaya_smes_m_100/">
+                            ЦПС М100 B7,5 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="23">
+                        <a href="/production/cps/cementno_peschanaya_smes_m_150/">
+                            ЦПС М150 B12,5 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="23">
+                        <a href="/production/cps/cementno_peschanaya_smes_m_200/">
+                            ЦПС М200 B15 </a>
+                    </li>
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/keramzitobeton/">
+                            Керамзитобетон </a>
+                        <span data-id="27" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="27">
+                        <a href="/production/keramzitobeton/keramzitobeton_m100/">
+                            М100 B7,5 </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="27">
+                        <a href="/production/keramzitobeton/keramzitobeton_m200/">
+                            М200 B15 </a>
+                    </li>
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/bloki/">
+                            Фундаментные блоки </a>
+                        <span data-id="30" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="30">
+                        <a href="/production/bloki/fbs_4_6_24/">
+                            ФБС 400х600х2400 </a>
+                    </li>
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/shcheben/">
+                            Щебень </a>
+                        <span data-id="40" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="40">
+                        <a href="/production/shcheben/shcheben-granitnyj/">
+                            Щебень гранитный </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="40">
+                        <a href="/production/shcheben/shcheben-gravijnyj/">
+                            Щебень гравийный </a>
+                    </li>
+                    <li class="depth1_left_men_lnk">
+                        <a href="/production/sypuchie-materialy/">
+                            Сыпучие материалы </a>
+                        <span data-id="43" class="left_mn_arr">
+                            <img src="/bitrix/templates/iclient_standart/components/bitrix/menu/index/images/arrow.svg" width="10" height="10" class="arr_right">
+                        </span>
+                    </li>
+        
+                    <li class="depth2_left_men_lnk" data-parent="43">
+                        <a href="/production/sypuchie-materialy/pesok/">
+                            Песок </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="43">
+                        <a href="/production/sypuchie-materialy/keramzit/">
+                            Керамзит </a>
+                    </li>
+                    <li class="depth2_left_men_lnk" data-parent="43">
+                        <a href="/production/sypuchie-materialy/keramzit-dlya-pola/">
+                            Керамзит для пола </a>
+                    </li>
+        
+                </ul>
+            </div>
+            <!-- .left_menu-->
+            <!-- блок скачивания -->
+            <div class="download_doc">
+                <a href="#" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40" fill="none">
+                        <path d="M12 0C10.727 0 9.50606 0.495797 8.60589 1.37832C7.70571 2.26084 7.2 3.4578 7.2 4.70588V16.9576C7.98451 16.7399 8.78797 16.5942 9.6 16.5224V4.70588C9.6 4.08184 9.85286 3.48336 10.3029 3.0421C10.753 2.60084 11.3635 2.35294 12 2.35294H21.6V10.5882C21.6 11.5243 21.9793 12.422 22.6544 13.0839C23.3295 13.7458 24.2452 14.1176 25.2 14.1176H33.6V32.9412C33.6 33.5652 33.3471 34.1637 32.8971 34.605C32.447 35.0462 31.8365 35.2941 31.2 35.2941H22.56C22.1231 36.1323 21.5944 36.9212 20.9832 37.6471H31.2C32.473 37.6471 33.6939 37.1513 34.5941 36.2687C35.4943 35.3862 36 34.1893 36 32.9412V12.7388C35.9992 11.8031 35.6193 10.906 34.944 10.2447L25.5504 1.03294C24.8755 0.371722 23.9605 0.000199721 23.0064 0H12ZM33.1032 11.7647H25.2C24.8817 11.7647 24.5765 11.6408 24.3515 11.4201C24.1264 11.1995 24 10.9003 24 10.5882V2.84L33.1032 11.7647ZM10.8 40C13.6643 40 16.4114 38.8845 18.4368 36.8988C20.4621 34.9131 21.6 32.2199 21.6 29.4118C21.6 26.6036 20.4621 23.9104 18.4368 21.9248C16.4114 19.9391 13.6643 18.8235 10.8 18.8235C7.93566 18.8235 5.18864 19.9391 3.16325 21.9248C1.13785 23.9104 0 26.6036 0 29.4118C0 32.2199 1.13785 34.9131 3.16325 36.8988C5.18864 38.8845 7.93566 40 10.8 40ZM5.1504 30.2447C4.92507 30.0238 4.79848 29.7242 4.79848 29.4118C4.79848 29.0994 4.92507 28.7997 5.1504 28.5788C5.37573 28.3579 5.68134 28.2338 6 28.2338C6.31866 28.2338 6.62427 28.3579 6.8496 28.5788L9.6 31.2776V24.7059C9.6 24.3939 9.72643 24.0946 9.95147 23.874C10.1765 23.6534 10.4817 23.5294 10.8 23.5294C11.1183 23.5294 11.4235 23.6534 11.6485 23.874C11.8736 24.0946 12 24.3939 12 24.7059V31.2776L14.7504 28.5788C14.9757 28.3579 15.2813 28.2338 15.6 28.2338C15.9187 28.2338 16.2243 28.3579 16.4496 28.5788C16.6749 28.7997 16.8015 29.0994 16.8015 29.4118C16.8015 29.7242 16.6749 30.0238 16.4496 30.2447L11.6496 34.9506C11.4259 35.1694 11.1232 35.2928 10.8072 35.2941H10.7928C10.48 35.2922 10.1803 35.1706 9.9576 34.9553L9.9504 34.9482L5.1504 30.2424V30.2447Z" fill="#FC9132"/>
+                    </svg>
+                    <span>
+                        Скачать прайс-лист бетона (от 28 апреля 2022)
+                    </span>
+                </a>
+                <a href="#" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40" fill="none">
+                        <path d="M12 0C10.727 0 9.50606 0.495797 8.60589 1.37832C7.70571 2.26084 7.2 3.4578 7.2 4.70588V16.9576C7.98451 16.7399 8.78797 16.5942 9.6 16.5224V4.70588C9.6 4.08184 9.85286 3.48336 10.3029 3.0421C10.753 2.60084 11.3635 2.35294 12 2.35294H21.6V10.5882C21.6 11.5243 21.9793 12.422 22.6544 13.0839C23.3295 13.7458 24.2452 14.1176 25.2 14.1176H33.6V32.9412C33.6 33.5652 33.3471 34.1637 32.8971 34.605C32.447 35.0462 31.8365 35.2941 31.2 35.2941H22.56C22.1231 36.1323 21.5944 36.9212 20.9832 37.6471H31.2C32.473 37.6471 33.6939 37.1513 34.5941 36.2687C35.4943 35.3862 36 34.1893 36 32.9412V12.7388C35.9992 11.8031 35.6193 10.906 34.944 10.2447L25.5504 1.03294C24.8755 0.371722 23.9605 0.000199721 23.0064 0H12ZM33.1032 11.7647H25.2C24.8817 11.7647 24.5765 11.6408 24.3515 11.4201C24.1264 11.1995 24 10.9003 24 10.5882V2.84L33.1032 11.7647ZM10.8 40C13.6643 40 16.4114 38.8845 18.4368 36.8988C20.4621 34.9131 21.6 32.2199 21.6 29.4118C21.6 26.6036 20.4621 23.9104 18.4368 21.9248C16.4114 19.9391 13.6643 18.8235 10.8 18.8235C7.93566 18.8235 5.18864 19.9391 3.16325 21.9248C1.13785 23.9104 0 26.6036 0 29.4118C0 32.2199 1.13785 34.9131 3.16325 36.8988C5.18864 38.8845 7.93566 40 10.8 40ZM5.1504 30.2447C4.92507 30.0238 4.79848 29.7242 4.79848 29.4118C4.79848 29.0994 4.92507 28.7997 5.1504 28.5788C5.37573 28.3579 5.68134 28.2338 6 28.2338C6.31866 28.2338 6.62427 28.3579 6.8496 28.5788L9.6 31.2776V24.7059C9.6 24.3939 9.72643 24.0946 9.95147 23.874C10.1765 23.6534 10.4817 23.5294 10.8 23.5294C11.1183 23.5294 11.4235 23.6534 11.6485 23.874C11.8736 24.0946 12 24.3939 12 24.7059V31.2776L14.7504 28.5788C14.9757 28.3579 15.2813 28.2338 15.6 28.2338C15.9187 28.2338 16.2243 28.3579 16.4496 28.5788C16.6749 28.7997 16.8015 29.0994 16.8015 29.4118C16.8015 29.7242 16.6749 30.0238 16.4496 30.2447L11.6496 34.9506C11.4259 35.1694 11.1232 35.2928 10.8072 35.2941H10.7928C10.48 35.2922 10.1803 35.1706 9.9576 34.9553L9.9504 34.9482L5.1504 30.2424V30.2447Z" fill="#FC9132"/>
+                    </svg>
+                    <span>
+                        Скачать типовой договор поставки бетона
+                    </span>
+                </a>            
+            </div>
+            <!-- Ваш менеджер -->
+            <div class="manager">
+                <div class="manager__img">
+                    <img src="images/manager.png" alt="">
+                </div>
+                <div class="manager__title">
+                    ВАШ МЕНЕДЖЕР
+                </div>
+                <div class="manager__name">
+                    Михаил Максимович Чикалов
+                </div>
+                <a class="manager__phone" href="tel:+7 962 933-33-21">+7 962 933-33-21</a>
+                <button class="manager__button" type="button"> Задать вопрос</button>
+            </div>
+            <!-- Статьи и новости -->
+            <div class="news">
+                <h2>Новости</h2>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Друзья, у нас новая рубрика на сайте. Вопрос-ответ!
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Внимание! Не дай себя обмануть!
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Добавлена новая статья "Классификация бетона по маркам".
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#" class="archive_news">
+                    Архив новостей
+                </a>
+            </div>
+            <div class="news">
+                <h2>Статьи</h2>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Бетон класса B10
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Бетон В30
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="news__block">
+                    <span class="news__preview">
+                        Бетон В20 марки 250: основные характеристики и состав, применение в строительстве
+                    </span>
+                    <a href="#">
+                        <span>
+                            подробнее
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6" fill="none">
+                            <rect y="0.114014" width="13" height="5" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_508_1524" transform="scale(0.0769231 0.2)"/>
+                            </pattern>
+                            <image id="image0_508_1524" width="13" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAFCAYAAACeuGYRAAAAHUlEQVQokWNgIBIEZlX/J1YtVo2MZJtAqk1kaQAASOgLC+ZIYJQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#" class="archive_news">
+                    Все статьи
+                </a>
+            </div>
+        
+        </div>
+        <div class="right_side  ">
+            <h1>
+                Товарный бетон
+            </h1>
+            <div class="category">
+                <a href="#" class="category__item">
+                    Бетон на гравийном щебне
+                </a>
+                <a href="#" class="category__item">
+                    Бетон на гранитном щебне
+                </a>
+                <a href="#" class="category__item">
+                    Керамзитобетон
+                </a>
+                <a href="#" class="category__item">
+                    Тощий бетон
+                </a>
+                <a href="#" class="category__item">
+                    Гидробетон
+                </a>
+                <a href="#" class="category__item">
+                    Фибробетон
+                </a>
+                <a href="#" class="category__item">
+                    Мостовой бетон
+                </a>
+            </div>
+            <div class="category__text">
+                <p>Компания ПК Бетон-ОЭЗ производит и реализует товарный бетон, соответствующий требованиям ГОСТа. Все наши смеси проходят контроль качества в специальных лабораториях. Соблюдение объемов гарантировано. </p>
+                <p>Заказы доставляются на строящиеся объекты бетономесителями из нашего автопарка. Область доставки — Зеленоград, Лыткино, Юрлово, Есипово и другие населенные пункты. Заказы на строительный материал принимаются в режиме 24/7.</p>
+            </div>
+            <div class="category__cards">
+                <form class="category__card category__card--full">
+                    <div class="category__card_img">
+                        <div class="category__card_imgblock">
+                            <img src="images/card/1.png" alt="">
+                        </div>
+                        <div class="category__card_name">
+                            Бетон М100
+                        </div>
+                        <div class="category__card_subname">
+                            БСТ В7,5 П1-П4
+                        </div>
+                        <div class="category__card_row  category__card_priceblock category__card_mobile">
+                            <div class="category__card_price" data-price="4550">
+                                <span>4550</span> руб/м3
+                            </div>
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__card_characteristics">
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Характеристики
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <ul>
+                                    <li>прочность класса В3,5;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>плотность в пределах 1500 кг/м.куб.</li>
+                                </ul>
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Назначение
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <ul>
+                                    <li>создание подготовительного слоя под столбчатые, плитные фундаменты;</li>
+                                    <li>заливка стяжки чернового пола;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>плотность в пределах 1500 кг/м.куб.</li>
+                                </ul>
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__card_calculator">
+                        <div class="category__card_row  category__card_priceblock category__card_pc">
+                            <div class="category__card_price category__card_mainprice" data-price="4550">
+                                <span>4550</span> руб/м3
+                            </div>
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </div>
+                        <div class="category__card_row category__card_certblock">
+                            <div class="category__card_cert">
+                                <span class="category__card_boldtext">
+                                    Сертификация
+                                </span>
+                                <div class="category__card_showtext">
+                                    <span>?</span>
+                                    <div class="category__card_hidetext">
+                                        Соответствие сертификации ГОСТ
+                                    </div>
+                                </div>
+                                <span class="category__card_boldtext">
+                                    :
+                                </span>
+                                <div class="category__card_gost">
+                                    ГОСТ
+                                    <img src="images/gost.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__card_row category__card_addblock">
+                            <span class="category__card_boldtext">
+                                Противоморозные добавки (ПМД):
+                            </span>
+                            <span class="category__card_text">
+                                Без ПМД
+                            </span>
+                        </div>
+                        <div class="category__card_row category__card_checkprices">
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice1_1" value="0" checked>
+                                <label for="checkprice1_1">
+                                    <img src="images/pricesadd/1.png" alt="">
+                                </label>
+                                <span></span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice2_1" value="100">
+                                <label for="checkprice2_1">
+                                    <img src="images/pricesadd/2.png" alt="">
+                                </label>
+                                <span>
+                                    +100 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice3_1" value="150">
+                                <label for="checkprice3_1">
+                                    <img src="images/pricesadd/3.png" alt="">
+                                </label>
+                                <span>
+                                    +150 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice4_1" value="200">
+                                <label for="checkprice4_1">
+                                    <img src="images/pricesadd/4.png" alt="">
+                                </label>
+                                <span>
+                                    +200 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice5_1" value="250">
+                                <label for="checkprice5_1">
+                                    <img src="images/pricesadd/5.png" alt="">
+                                </label>
+                                <span>
+                                    +250 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add" id="checkprice6_1" value="300">
+                                <label for="checkprice6_1">
+                                    <img src="images/pricesadd/6.png" alt="">
+                                </label>
+                                <span>
+                                    +300 руб/м3
+                                </span>
+                            </div>
+                        </div>
+                        <div class="category__card_submit">
+                            <div class="category__card_row category__card_total">
+                                <span class="category__card_boldtext">
+                                    Всего выбранно товаров:
+                                </span>
+                                <div id="numbergoods">0</div>
+                            </div>
+                            <div class="category__card_row category__card_total">
+                                <span class="category__card_boldtext">
+                                    На сумму:
+                                </span>
+                                <div class="totalprice"><span>0</span> руб.</div>
+                            </div>
+                            <button type="button" class="category__card_checkout btn_checkout">
+                                Оформить заказ
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <!-- информация о товаре для popup -->
+                    <div style="display:none;">
+                        <div class="name">
+                            БСТ В7,5 П1-П4	
+                        </div>
+                        <div class="brand">
+                            М 100
+                        </div>
+                        <div class="priceNDS">
+                            4550
+                        </div>
+                        
+
+                    </div>
+                </form>
+                <form class="category__card category__card--full">
+                    <div class="category__card_img">
+                        <div class="category__card_imgblock">
+                            <img src="images/card/1.png" alt="">
+                        </div>
+                        <div class="category__card_name">
+                            Бетон М100
+                        </div>
+                        <div class="category__card_subname">
+                            БСТ В7,5 П1-П4
+                        </div>
+                        <div class="category__card_row  category__card_priceblock category__card_mobile">
+                            <div class="category__card_price" data-price="4550">
+                                <span>4550</span> руб/м3
+                            </div>
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__card_characteristics">
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Характеристики
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <ul>
+                                    <li>прочность класса В3,5;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>плотность в пределах 1500 кг/м.куб.</li>
+                                </ul>
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Назначение
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <ul>
+                                    <li>создание подготовительного слоя под столбчатые, плитные фундаменты;</li>
+                                    <li>заливка стяжки чернового пола;</li>
+                                    <li>удержание воды до 90%;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>удобоукладываемость ПК 4;</li>
+                                    <li>плотность в пределах 1500 кг/м.куб.</li>
+                                </ul>
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__card_calculator">
+                        <div class="category__card_row  category__card_priceblock category__card_pc">
+                            <div class="category__card_price category__card_mainprice" data-price="4550">
+                                <span>4550</span> руб/м3
+                            </div>
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </div>
+                        <div class="category__card_row category__card_certblock">
+                            <div class="category__card_cert">
+                                <span class="category__card_boldtext">
+                                    Сертификация
+                                </span>
+                                <div class="category__card_showtext">
+                                    <span>?</span>
+                                    <div class="category__card_hidetext">
+                                        Соответствие сертификации ГОСТ
+                                    </div>
+                                </div>
+                                <span class="category__card_boldtext">
+                                    :
+                                </span>
+                                <div class="category__card_gost">
+                                    ГОСТ
+                                    <img src="images/gost.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__card_row category__card_addblock">
+                            <span class="category__card_boldtext">
+                                Противоморозные добавки (ПМД):
+                            </span>
+                            <span class="category__card_text">
+                                Без ПМД
+                            </span>
+                        </div>
+                        <div class="category__card_row category__card_checkprices">
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice1_2" value="0" checked>
+                                <label for="checkprice1_2">
+                                    <img src="images/pricesadd/1.png" alt="">
+                                </label>
+                                <span></span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice2_2" value="100">
+                                <label for="checkprice2_2">
+                                    <img src="images/pricesadd/2.png" alt="">
+                                </label>
+                                <span>
+                                    +100 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice3_2" value="150">
+                                <label for="checkprice3_2">
+                                    <img src="images/pricesadd/3.png" alt="">
+                                </label>
+                                <span>
+                                    +150 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice4_2" value="200">
+                                <label for="checkprice4_2">
+                                    <img src="images/pricesadd/4.png" alt="">
+                                </label>
+                                <span>
+                                    +200 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice5_2" value="250">
+                                <label for="checkprice5_2">
+                                    <img src="images/pricesadd/5.png" alt="">
+                                </label>
+                                <span>
+                                    +250 руб/м3
+                                </span>
+                            </div>
+                            <div class="category__card_checkprice">
+                                <input type="radio" name="add_2" id="checkprice6_2" value="300">
+                                <label for="checkprice6_2">
+                                    <img src="images/pricesadd/6.png" alt="">
+                                </label>
+                                <span>
+                                    +300 руб/м3
+                                </span>
+                            </div>
+                        </div>
+                        <div class="category__card_submit">
+                            <div class="category__card_row category__card_total">
+                                <span class="category__card_boldtext">
+                                    Всего выбранно товаров:
+                                </span>
+                                <div id="numbergoods">0</div>
+                            </div>
+                            <div class="category__card_row category__card_total">
+                                <span class="category__card_boldtext">
+                                    На сумму:
+                                </span>
+                                <div class="totalprice"><span>0</span> руб.</div>
+                            </div>
+                            <button type="button" class="category__card_checkout btn_checkout">
+                                Оформить заказ
+                            </button>
+                        </div>
+                         <!-- информация о товаре для popup -->
+                    <div style="display:none;">
+                        <div class="name">
+                            БСТ В7,5 П1-П4	
+                        </div>
+                        <div class="brand">
+                            М 100
+                        </div>
+                        <div class="priceNDS">
+                            4550
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+                </form>
+                <form class="category__card category__card--empty">
+                    <div class="category__card_img">
+                        <div class="category__card_imgblock">
+                            <img src="images/card/1.png" alt="">
+                        </div>
+                        <div class="category__card_name">
+                            Зимний бетон морозостойкий
+                        </div>
+                        
+                    </div>
+                    <div class="category__card_characteristics">
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Характеристики
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <div class="category__card_characteristics_text category__card_characteristics_text--small">
+                                    <p>
+                                        В большинстве случаев для повышения морозостойкости состава используется мочевина, нитрат кальция или натрия, гидрофобизаторы, универсальный пластификатор СЗ и другие компоненты.
+                                        Готовая масса подходит для выполнения работ при температуре до -20°С и хорошо показывает себя в эксплуатации при соответствующих условиях. Присадки снижают отрезок схватывания и ускоряют время затвердевания бетонной смеси.
+                                    </p>
+                                </div>
+                                
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                        <div class="category__card_characteristics_block">
+                            <div class="category__card_characteristics_title">
+                                Назначение
+                            </div>
+                            <div class="category__card_characteristics_list">
+                                <div class="category__card_characteristics_text category__card_characteristics_text--big">
+                                    <p>
+                                        В большинстве случаев для повышения морозостойкости состава используется мочевина, нитрат кальция или натрия, гидрофобизаторы, универсальный пластификатор СЗ и другие компоненты.
+                                        Готовая масса подходит для выполнения работ при температуре до -20°С и хорошо показывает себя в эксплуатации при соответствующих условиях. Присадки снижают отрезок схватывания и ускоряют время затвердевания бетонной смеси.
+                                    </p>
+                                    <ul>
+                                        <li>создание подготовительного слоя под столбчатые, плитные фундаменты;</li>
+                                        <li>заливка стяжки чернового пола;</li>
+                                        <li>удержание воды до 90%;</li>
+                                        <li>удобоукладываемость ПК 4;</li>
+                                        <li>удобоукладываемость ПК 4;</li>
+                                        <li>плотность в пределах 1500 кг/м.куб.</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="toggle_list">Читать все</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__card_calculator">
+                        
+                        <div class="category__card_submit">
+                            
+                            <button type="button" class="category__card_checkout btn_checkout">
+                                Оформить заказ
+                            </button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="category_pagination">
+
+                <a href="#" class="category_pagination__btn category_pagination__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                        <g clip-path="url(#clip0_507_1485)">
+                            <path d="M12.2035 15.8401L13.005 15.0386C13.1121 14.9318 13.1654 14.8087 13.1654 14.6696C13.1654 14.5309 13.1121 14.4079 13.005 14.3011L6.70434 8.00008L13.0049 1.69934C13.1119 1.59248 13.1652 1.4695 13.1652 1.33058C13.1652 1.1916 13.1119 1.06862 13.0049 0.961812L12.2033 0.160377C12.0965 0.0533466 11.9735 -5.20986e-08 11.8345 -5.81736e-08C11.6957 -6.42438e-08 11.5727 0.053515 11.4659 0.160377L3.99478 7.63132C3.88792 7.73812 3.83452 7.86116 3.83452 8.00008C3.83452 8.13901 3.88792 8.26182 3.99478 8.36857L11.4659 15.8401C11.5728 15.9469 11.6957 16 11.8345 16C11.9735 16 12.0965 15.9469 12.2035 15.8401Z" fill="#4D5D68" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_507_1485">
+                                <rect width="16" height="16" fill="white" transform="translate(16.5) rotate(90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                
+                <a href="#" class="category_pagination__btn category_pagination__link category_pagination__btn--active">
+                    1
+                </a>
+                
+                <a href="#" class="category_pagination__btn category_pagination__link">
+                    2
+                </a>
+                
+                <a href="#" class="category_pagination__btn category_pagination__link">
+                    3
+                </a>
+                
+                <a href="#" class="category_pagination__btn category_pagination__link">
+                    4
+                </a>
+                
+                <a href="#" class="category_pagination__btn category_pagination__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                        <g clip-path="url(#clip0_507_1485)">
+                            <path d="M12.2035 15.8401L13.005 15.0386C13.1121 14.9318 13.1654 14.8087 13.1654 14.6696C13.1654 14.5309 13.1121 14.4079 13.005 14.3011L6.70434 8.00008L13.0049 1.69934C13.1119 1.59248 13.1652 1.4695 13.1652 1.33058C13.1652 1.1916 13.1119 1.06862 13.0049 0.961812L12.2033 0.160377C12.0965 0.0533466 11.9735 -5.20986e-08 11.8345 -5.81736e-08C11.6957 -6.42438e-08 11.5727 0.053515 11.4659 0.160377L3.99478 7.63132C3.88792 7.73812 3.83452 7.86116 3.83452 8.00008C3.83452 8.13901 3.88792 8.26182 3.99478 8.36857L11.4659 15.8401C11.5728 15.9469 11.6957 16 11.8345 16C11.9735 16 12.0965 15.9469 12.2035 15.8401Z" fill="#4D5D68" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_507_1485">
+                                <rect width="16" height="16" fill="white" transform="translate(16.5) rotate(90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+            </div>
+            <section class="section_text">
+                <h2>
+                    Виды товарного бетона
+                </h2>
+                <p>
+                    Товарный бетон — важный строительный материал. Его применяют в самых разных целях: от обустройства садовых дорожек до монолитных сооружений. Свойства цементного раствора могут различаться в зависимости от целей, для которых он был изготовлен.
+                </p>
+                <p>
+                    Видов смеси два:
+                </p>
+                <ul>
+                    <li>Перемешивание производится на заводе, готовая смесь доставляется до объекта в специальной вращающейся емкости. Такой способ доставки предупреждает нежелательное расслаивание и появление жидкости.</li>
+                    <li>Бетонная смесь — транспорт-бетон — производится на ходу, перед выгрузкой цемента или в автобетономешалке.</li>
+                </ul>
+                <p>
+                    Свойства строительного материала зависят от его плотности, а та формируется под воздействием плотности цементного камня, вида заполнителя и структуры цементной смеси.
+                </p>
+                <p><b>Цена товара на условии самовывоза * (руб./1 м3 ) в т.ч. НДС 20%</b></p>
+            </section>
+            <section class="advantages_company">
+                <h2>
+                    Преимущества нашей компании
+                </h2>
+                <div class="advantages_company__cont">
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Без посредников
+                        </div>
+                        <div class="advantages_company__text">
+                            Производим и доставляем бетон
+                            без сторонних компаний
+                        </div>
+                    </div>
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8-1.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Любой объём
+                        </div>
+                        <div class="advantages_company__text">
+                            Сделаем на заказ необходимое количество материала
+                        </div>
+                    </div>
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8-2.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Сертификат ГОСТ
+                        </div>
+                        <div class="advantages_company__text">
+                            Качество подтверждено сертификатами
+                            и декларациями ГОСТ
+                        </div>
+                    </div>
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8-3.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Цена от завода
+                        </div>
+                        <div class="advantages_company__text">
+                            Выгодная стоимость бетона напрямую
+                                    от «ПК Бетон-ОЭЗ»
+                        </div>
+                    </div>
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8-4.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Доставим вовремя
+                        </div>
+                        <div class="advantages_company__text">
+                            Доставляем бетон, ЦПР и смеси 
+                            в заранее утвержденное время
+                        </div>
+                    </div>
+                    <div class="advantages_company__block">
+                        <div class="advantages_company__img">
+                            <img src="images/advantages/Rectangle 8-5.png" alt="">
+                        </div>
+                        <div class="advantages_company__title">
+                            Собственный автопарк
+                        </div>
+                        <div class="advantages_company__text">
+                            Доставляем бетон на собственных современных бетоносмесителях с системой GPS-навигации
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sert_cont">
+                <h2>
+                    Сертификаты
+                </h2>
+                <div class="sert_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="images/cert/1.jpg" data-fancybox="cert_gallery" >
+                                <img data-src="images/cert/1.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/cert/2.jpg" data-fancybox="cert_gallery" >
+                                <img data-src="images/cert/2.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/cert/3.jpg" data-fancybox="cert_gallery" >
+                                <img data-src="images/cert/3.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/cert/3.jpg" data-fancybox="cert_gallery" >
+                                <img data-src="images/cert/3.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/cert/3.jpg" data-fancybox="cert_gallery" >
+                                <img data-src="images/cert/3.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <section class="our_objects">
+                <h2>
+                    Сертификаты
+                </h2>
+                <div class="our_objects__slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="images/our_objects/3.jpg" data-fancybox="objects_gallery" >
+                                <img data-src="images/our_objects/3.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/our_objects/1.jpg" data-fancybox="objects_gallery" >
+                                <img data-src="images/our_objects/1.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/our_objects/2.jpg" data-fancybox="objects_gallery" >
+                                <img data-src="images/our_objects/2.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/our_objects/3.jpg" data-fancybox="objects_gallery" >
+                                <img data-src="images/our_objects/3.jpg" class="swiper-lazy" alt="" />
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </a>
+                          </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <section class="delivery">
+                <h2>
+                    Доставка товарного бетона
+                </h2>
+                <div class="subtitle">
+                    Вас интересует доставка бетона? У нас вы можете купить смеси следующих марок: М100, 150, 200, 300, 350, 400, 450, 500, 550 и др. Ознакомиться с их ценами можно в таблицах.
+                </div>
+            </section>
+            <section class="section_form">
+                <form action="#">
+                    <h2>
+                        Оставьте заявку
+                    </h2>
+                    <div class="section_form__cont">
+                        <div class="section_form__column">
+                            <div class="section_form__row">
+                                <span class="required">
+                                    Ваше имя
+                                </span>
+                                <input type="text" name="name" placeholder="" id="" required>
+                            </div>
+                            <div class="section_form__row">
+                                <span class="required">
+                                    Ваша почта
+                                </span>
+                                <input type="text" name="mail" placeholder="" id="" required>
+                            </div>
+                            <div class="section_form__row">
+                                <span>
+                                    Ваш телефон
+                                </span>
+                                <input type="phone" name="phone" placeholder="" id="">
+                            </div>
+                        </div>
+                        <div class="section_form__column">
+                            <div class="section_form__row">
+                                <span class="required">
+                                    Сообщение*
+                                </span>
+                                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                            </div>
+                           
+                            <div class="section_form__row section_form__submit">
+                                <div class="section_form__politica">
+                                    <input type="radio" id="politica_id" checked>
+                                    <label for="politica_id">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                                            <path d="M1 3.85292L4.2374 7L9 1" stroke="white" stroke-linecap="round"/>
+                                        </svg>
+                                    </label>
+                                    <span>
+                                        Нажимая кнопку "Оформить заказ", я даю согласие на обработку моих персональных данных и принимаю условия <a href="#">Политики конфиденциальности</a>.
+                                    </span>
+                                </div>
+                                <button class="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        
+    </div>
+    <div style="clear:both; height:30px"></div>
+
+
+    <!-- попап оформить заказ -->
+    <div class="checkout_popup">
+        <form action="#">
+            <div class="checkout_popup__title">
+                <h2>Оформление заказа</h2>
+                <button type="button" class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#4D5D68"/>
+                        <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#4D5D68"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="checkout_popup__subtitle">
+                Выбранный товар
+            </div>
+            <div class="checkout_popup__table">
+                <table>
+                    <tr>
+                        <th class="cell_mob"></th>
+                        <th>Наименование</th>
+                        <th>Марка</th>
+                        <th>Стоимость с НДС за м3/руб</th>
+                        <th>Противоморозные добавки (ПМД)</th>
+                        <th>Количество кубов</th>
+                        <th>Стоимость руб</th>
+                        <th class="cell_desk"></th>
+                    </tr>
+                    <tr>
+                        <td  class="product_del cell_mob">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="product_name">БСТ В7,5 П1-П4</td>
+                        <td class="product_brand">М 100</td>
+                        <td class="product_pricem2">4550</td>
+                        <td class="product_add">+200 руб/м3 (до -15 ℃)</td>
+                        <td class="product_value">
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </td>
+                        <td class="product_price">
+                            12000
+                        </td>
+                        <td  class="product_del cell_desk">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="product_del cell_mob">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="product_name">БСТ В7,5 П1-П4</td>
+                        <td class="product_brand">М 100</td>
+                        <td class="product_pricem2">4550</td>
+                        <td class="product_add">+200 руб/м3 (до -15 ℃)</td>
+                        <td class="product_value">
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </td>
+                        <td class="product_price">
+                            12000
+                        </td>
+                        <td  class="product_del cell_desk">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="product_del cell_mob">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="product_name">БСТ В7,5 П1-П4</td>
+                        <td class="product_brand">М 100</td>
+                        <td class="product_pricem2">4550</td>
+                        <td class="product_add">+200 руб/м3 (до -15 ℃)</td>
+                        <td class="product_value">
+                            <div class="number" data-step="1" data-min="0" data-max="100">                           
+                                <a href="#" class="number-minus">−</a>
+                                <input class="number-text" type="text" name="count" value="0">
+                                <a href="#" class="number-plus">+</a>
+                            </div>
+                        </td>
+                        <td class="product_price">
+                            12000
+                        </td>
+                        <td  class="product_del cell_desk">
+                            <button class="delete_product">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M0 2L2 0L10 7.99999L8 9.99998L0 2Z" fill="#FC9132"/>
+                                    <path d="M0 8L2 10L10 2.00001L8 1.52066e-05L0 8Z" fill="#FC9132"/>
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="total_price">
+                <div class="total_price__text">
+                    Итого
+                </div>
+                <div class="total_price__value">
+                    3
+                </div>
+                <div class="total_price__price">
+                    16550
+                </div>
+            </div>
+            <div class="checkout_popup__note">
+                <h3>
+                    Важные примечания:
+                </h3>
+                <span>Стоимость доставки рассчитывается отдельно. </span>
+                <span>Указаны оптовые цены. Реальные отпускные цены могут отличаться от указанных на сайте, просьба уточнять у менеджера.</span>
+            </div>
+            <section class="section_form">
+                <h2>
+                    Оформление заказа:
+                </h2>
+                <div class="section_form__cont">
+                    <div class="section_form__column">
+                        <div class="section_form__row">
+                            <span class="required">
+                                Ваше имя
+                            </span>
+                            <input type="text" name="name" placeholder="" id="" required>
+                        </div>
+                        <div class="section_form__row">
+                            <span class="required">
+                                Ваша почта
+                            </span>
+                            <input type="text" name="mail" placeholder="" id="" required>
+                        </div>
+                        <div class="section_form__row">
+                            <span>
+                                Ваш телефон
+                            </span>
+                            <input type="phone" name="phone" placeholder="" id="">
+                        </div>
+                    </div>
+                    <div class="section_form__column">
+                        <div class="section_form__row">
+                            <span class="required">
+                                Сообщение*
+                            </span>
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                       
+                        <div class="section_form__row section_form__submit">
+                            <div class="section_form__politica">
+                                <input type="radio" id="politica_id" checked>
+                                <label for="politica_id">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                                        <path d="M1 3.85292L4.2374 7L9 1" stroke="white" stroke-linecap="round"/>
+                                    </svg>
+                                </label>
+                                <span>
+                                    Нажимая кнопку "Оформить заказ", я даю согласие на обработку моих персональных данных и принимаю условия <a href="#">Политики конфиденциальности</a>.
+                                </span>
+                            </div>
+                            <button class="submit">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>                                      
+            </section>
+        </form>       
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
